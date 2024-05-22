@@ -49,7 +49,7 @@
             <td>$row[created_at]</td> 
             <td>
               <a class='btn btn-primary btn-sm' href='/edit.php?id=$row[id]'>Edit</a>
-              <a class='btn btn-danger btn-sm' href='/delete.php?id=$row[id]'>Delete</a>
+              <a onclick=\"return confirm('Bạn có muốn xóa khách hàng này không?')\" class='btn btn-danger btn-sm' href='/delete.php?id=$row[id]'>Delete</a>
             </td>
           </tr>
           ";
